@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--  Phonegap 
+Plantillas y Comentarios: dos botones en header y dos botones en footer con inconos
+By Exevenezia  *  http://exevenezia.blogspot.com.ar/  -->
+        <!--Metas -->
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/index.css" type="text/css"  />
+        <link rel="stylesheet" href="css/screen.css" type="text/css" />
+         <!-- Archivos .js -->
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Titulo -->
+        <title>Ejemplo 3</title>
+    </head>
+    <!--*********************** Fin Head************************** -->
+    <body>
+        <!--  Pagina nueva y se identifico con un ID="" -->
+        <div data-role="page" id="index" data-title="index">
+            <header data-role="header" data-position="fixed">
+                 <a href="#" data-icon="home">Home</a>
+                <h1>Ejemplo 3</h1>
+                <a href="http://exevenezia.blogspot.com.ar/" data-icon="star">Contacto</a>
+            </header>
+            <!-- Contenido  -->
+                <div data-role="content">
+                <p>Lista con data-autodividers="true" </p>
+                <!-- Una lista que se auto divida por la primera letra de cada item de la lista se hace en un
+                <ul> data-role="listview" EL data-autodividers="true" pero NO TE ORDENA ALFAVETICAMENTE
+                y despues usamos un data-inset="true" para que le de un estilo con las esquinas redondeadas 
+                y un poco de margen  -->
+                <ul data-role="listview" data-inset="true" data-autodividers="true">
+                    <li><a href="#">Elemento 1</a></li>
+                    <li><a href="#">Elemento 2</a></li>
+                    <li><a href="#">U-Elemento 3</a></li>
+                    <li><a href="#">A-Elemento 4</a></li>
+                    </ul>
+
+                    <ul data-role="listview" data-inset="true">
+                    <p>Lista con data-role="list-divider" y un titulo </p>
+                <!-- Despues podemos dividir la lista como sea, adentro del ul data-role="listview" poner un
+                 <li data-role="list-divider">blabla</li> despues todos los items de ese grupo y podemos crear otra division y otra y otra... -->
+                  <li data-role="list-divider">Lista Animales</li>
+                <li><a href="#">Elefante</a></li>
+                      <li data-role="list-divider">Lista de Numeros</li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+            </ul>   
+            </div>  
+            <!-- Footer -->
+            <footer data-role="footer" class="ui-bar" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="info">Informacion</a></li>
+                          <li><a href="#" data-icon="alert">Reporte</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+                <h4>exevenezia.blogspot.com.ar &copy; 2014</h4>
+            </footer>  
+        </div>  
+    </body>
+             
+</html>
